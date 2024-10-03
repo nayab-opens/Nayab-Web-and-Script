@@ -1,0 +1,125 @@
+/*CSS stands for Cascading Style Sheets 
+- Language that controls the look and formatting of web pages*/
+/* opens file with @charset "UTF-8*/
+/*The UTF-8 set allows characters and symbols from a wide range of alphabets*/
+@charset "UTF-8";
+/*<body> tag style applies to all elements  on the page */
+/*the body <body> opens with the name of element followed by { and style closes with }*/
+body {
+    background-color:black; /*What background colour for the body*/
+    font-family: Verdana, Geneva, Arial, sans-serif; /*what font needed for the text*/
+    padding:0px; /*How much padding is requierd*/
+    margin:0px;/*What margin is needed */ 
+}
+
+/*The wrapper ID style is used with a dic tag to provide a 960px wide page*/
+/*defines div tag box wraps entire page content*/
+
+#wrapper {
+    width: 960px;height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:LightSlateGrey ;
+    }
+
+/*The right-coloum ID style is floated right*/
+#right-coloum {
+    float: right; 
+    width: 600px; height: 600px; 
+    background-color:lightgray; 
+}
+/*The left-coloum ID style is floated left*/
+#left-coloum{ 
+    float: left; 
+    width: 360px;background-color:silver;
+    height:600px;
+}
+
+/*To define a style for a set of tags separated by commas applies the style to all tags */
+/*six heading levels , mutliple styles and compound styles
+- one applies to all these elements 
+- one applies only when the last element is enclosed inside all the elements*/
+h1,h2,h3,h4,h5,h6,p,li{
+margin-left:15px;
+}
+
+#footer {
+    height:80px; 
+}
+#banner{
+    height:120px;
+    background-color:slategray;
+
+}
+
+/*Defining a style for a set of tahs not separated by commas applies the style only to all tags within the preceding tag*/
+
+#banner h1 {
+    color:white;
+} 
+/*Advanced Web Design relies on class or ID styles , never tables */
+.box {
+    height:150px; 
+    width: 150px;float: left; 
+    background-color: tan;
+    margin:15px;
+    opacity:.5;
+}
+/* The following pseudo-class applies to the box class when in a hovered state*/
+.box:hover {
+    background-color:white; 
+    opacity:1;
+}
+/*This clear class style terminates float*/
+
+.clear{ 
+    clear:both;
+}
+/*two declartions : text color , background color for h1*/
+
+
+
+/*Individuals styles within style sheet called selectors or rules 
+/*create <h1> element = selector 
+class style called "box" always begin with "." and <body>= selector*/
+
+/* Color scheme hexadecimal values: * Color scheme hexadecimal values: 8FDB37 37DB5F 4ADB37 D4DB37 37DB97 8BDB80 */
+
+/*Custom color applied to the body element called background-color with the hexdecimal values*/
+body {
+    background-color: #8FDB37 ;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding:0px;
+    margin:0px;
+    }
+/* background: linear-gradient (<to direction>, <color stop>, <color stop> 
+    - Property is backgorund 
+    - value is linear-gradient within parentheses 
+    - direction part of value defines the color blend 
+    - The <color stop> sections define a color and control where that color becomes fully visible.
+    -"stop"=alue as the point where a color can start or end*/
+
+    body {
+        background: yellow;
+        background: -moz-linear-gradient(top, red 0%, yellow 100%);
+        background: -webkit-linear-gradient(top, red 0%, yellow 100%);
+        background: -o-linear-gradient(top, red 0%, yellow 100%);
+        background: linear-gradient(to bottom, red 0%,yellow 100%);
+        font-family: Verdana, Geneva, Arial, sans-serif;
+        padding:0px;
+        margin:0px;
+        background-color: black;
+        font-family: Verdana, Geneva, Arial, sans-serif;
+        padding:0px;
+        margin:0px;
+        }
+        
+        .box
+        {
+        height: 100px;
+        width: 100px;float: left;
+        margin: 15px;
+        padding: 25px;
+        opacity:.5;
+        border-radius: 75px;
+        }     
