@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me!</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+</head>
+
+<body> 
+    <div class="logo"><span>N</span>K.</div>
+    <nav>
+        <ul class="navlist">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <h1 style="text-align:center">My Page</h1>
+        <div class="aboutImg">
+            <div class="card">
+
+            <!-- Make the image smaller by adjusting the width attribute -->
+            <img src="img9.png" alt="Nayab Khan" class="small-img"; />
+            <div class="container">
+
+            </div>
+        </div>
+        <article> 
+            <p>I'm a second-year student in Networking and Information Security. 
+               I have always had an interest in technology and how it connects people. 
+               To me, it is about protecting important information and ensuring safe communication.</p>
+            <h3>Introductory Video</h3>
+            <!-- Fixed "controls" attribute and ensured video plays -->
+            <video width="400" controls poster="video-poster.jpg">
+                <source src="About Me - Made with Clipchamp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+            </video>
+        </article>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact me: <a href="mailto:nayab.khan@ontariotecu.net">nayab.khan@ontariotecu.net</a></p>
+            <p>&copy; 2024 Nayab Khan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<br>
+<button onclick ="PlayPause()">Play/Pause Button </button>
+<script>
+    var mybtn=document.getElementById("myvid");
+    function PlayPause()
+    {
+        if(mybtn.paused)
+            mybtn.play();
+        else
+            mybtn.pause();
+    }
