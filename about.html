@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me!</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" /> <!-- Link to CSS file -->
+</head>
+
+<body> 
+    <header>
+        <div class="logo"><span>N</span>K.</div> <!-- Logo for the site -->
+        <nav>
+            <ul class="navlist"> <!-- Navigation menu -->
+                <li><a href="index2.html">Home</a></li> <!-- Link to Home page -->
+                <li><a href="contact.html">Contact Me</a></li> <!-- Link to Contact page -->
+                <li><a href="projects.html">Projects</a></li> <!-- Link to Projects page -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about"> <!-- Section for About Me -->
+        <h1>About Me</h1> <!-- Main heading -->
+        <h1 style="text-align:center">My Page</h1> <!-- Subheading -->
+        <div class="aboutImg"> <!-- Div for about image and content -->
+            <div class="card"> <!-- Card layout for the image -->
+                <!-- Image of Nayab Khan -->
+                <img src="img9.png" alt="Nayab Khan" class="small-img"; /> <!-- Smaller image -->
+                <div class="container">
+                </div>
+            </div>
+            <article> <!-- Article for text content -->
+                <p>I'm a second-year student in Networking and Information Security. 
+                   I have always had an interest in technology and how it connects people. 
+                   To me, it is about protecting important information and ensuring safe communication.</p>
+                
+                <p>I believe in the power of perseverance and continuous learning. Every challenge is an opportunity to grow, and I strive to approach each task with curiosity and determination. 
+                    My motto is: "Embrace challenges as stepping stones toward success." This mindset keeps me motivated and encourages me to push my limits, whether in academics or personal projects.</p>
+                
+                <h3>Introductory Video</h3> <!-- Heading for the video -->
+
+                <!-- Video element for introductory video -->
+                <video width="400" controls poster="video-poster.jpg">
+                    <source src="About Me - Made with Clipchamp.mp4" type="video/mp4"> <!-- Source for the video -->
+                    Your browser does not support the video tag. <!-- Message for unsupported browsers -->
+                </video>
+            </div>
+        </article>
+    </section>
+
+    <footer> <!-- Footer section -->
+        <div class="footer-content">
+            <p>Contact me: <a href="mailto:nayab.khan@ontariotecu.net">nayab.khan@ontariotecu.net</a></p> <!-- Email link -->
+            <p>&copy; 2024 Nayab Khan. All Rights Reserved.</p> <!-- Copyright notice -->
+        </div>
+    </footer>
+</body>
+</html>
+
+<br>
+<button onclick ="PlayPause()">Play/Pause Button </button> <!-- Button to play/pause video -->
+<script>
+    var mybtn=document.getElementById("myvid"); // Get video element
+    function PlayPause() { // Function to play or pause the video
+        if(mybtn.paused)
+            mybtn.play(); // Play video if paused
+        else
+            mybtn.pause(); // Pause video if playing
+    }
+</script>
