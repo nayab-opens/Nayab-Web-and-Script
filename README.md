@@ -19,6 +19,6 @@ https://boxicons.com/?query=i
 Slider: 
 https://www.sliderrevolution.com/resources/css-animated-background/
 
-https://nayab-opens.github.io/Nayab-Web-and-Script/
+
 
 
