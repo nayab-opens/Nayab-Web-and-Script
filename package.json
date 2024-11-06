@@ -15,5 +15,9 @@
     "http-errors": "~1.6.3",
     "mongoose": "^8.8.0",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "first node ",
+  "main": "server.js",
+  "author": "Nayab",
+  "license": "ISC"
 }
